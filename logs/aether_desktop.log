@@ -25,3 +25,310 @@
 2025-06-22 19:51:44.872 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
 2025-06-22 19:55:19.022 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
 2025-06-22 19:56:18.237 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:27:29.952 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:27:30.222 | INFO     | utils.ai_providers:_setup_provider:150 | 使用Groq AI提供商
+2025-06-22 20:27:41.210 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:27:41.469 | INFO     | utils.ai_providers:_setup_provider:150 | 使用Groq AI提供商
+2025-06-22 20:27:41.967 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:27:41.968 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:27:41.968 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 20:27:41.974 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 20:27:41.976 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.001秒)
+2025-06-22 20:27:41.976 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 20:27:41.976 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 20:27:41.976 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.007秒)
+2025-06-22 20:27:41.978 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 20:27:41.980 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:28:26.061 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:28:26.313 | INFO     | utils.ai_providers:_setup_provider:150 | 使用Groq AI提供商
+2025-06-22 20:28:26.808 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:28:26.808 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:28:26.808 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 20:28:26.814 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 20:28:26.814 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 20:28:26.815 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 20:28:26.815 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 20:28:26.815 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.007秒)
+2025-06-22 20:28:26.819 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 20:28:26.819 | ERROR    | strategy:_initialize_gemini:120 | Gemini初始化失败: 请在config.ini中配置有效的Gemini API密钥
+2025-06-22 20:28:26.821 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:29:01.499 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:29:01.753 | INFO     | utils.ai_providers:_setup_provider:150 | 使用Groq AI提供商
+2025-06-22 20:29:02.237 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:29:02.238 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:29:02.238 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 20:29:02.243 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 20:29:02.243 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 20:29:02.243 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 20:29:02.244 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 20:29:02.244 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.006秒)
+2025-06-22 20:29:02.246 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 20:29:02.247 | INFO     | strategy:__init__:98 | AI策略引擎初始化完成 - 使用Groq AI
+2025-06-22 20:29:02.248 | INFO     | strategy:generate_rules_from_llm:210 | 开始使用Groq AI生成整理规则
+2025-06-22 20:29:02.248 | INFO     | utils.ai_providers:generate_rules:36 | 正在调用Groq API生成规则...
+2025-06-22 20:29:04.250 | INFO     | utils.ai_providers:generate_rules:83 | Groq API调用成功，规则生成完毕
+2025-06-22 20:29:04.251 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_001
+2025-06-22 20:29:04.252 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_002
+2025-06-22 20:29:04.253 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_003
+2025-06-22 20:29:04.253 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_004
+2025-06-22 20:29:04.253 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_005
+2025-06-22 20:29:04.254 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_006
+2025-06-22 20:29:04.254 | INFO     | strategy:_validate_and_optimize_rules:400 | 规则验证完成: 0/0 有效
+2025-06-22 20:29:04.254 | INFO     | strategy:generate_rules_from_llm:226 | Groq AI规则生成成功: 0 条规则
+2025-06-22 20:29:04.266 | INFO     | strategy:save_rules_to_file:451 | 规则集已保存: D:\python项目\Aether_Desktop\data\demo_rules.json
+2025-06-22 20:29:04.268 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:34:19.406 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:34:19.677 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:34:19.678 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:34:19.678 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:34:19.679 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:34:19.680 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:34:19.680 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:34:20.607 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:34:51.191 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:34:51.475 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:34:51.476 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:34:51.476 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:36:51.329 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:36:51.609 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:36:51.610 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:36:51.610 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:36:51.611 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:36:53.075 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:36:53.076 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:36:53.077 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:36:53.077 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:36:54.089 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:36:54.090 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:36:55.047 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:36:55.048 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: microsoft/phi-3-mini-128k-instruct:free
+2025-06-22 20:36:55.857 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:36:55.858 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: google/gemma-7b-it:free
+2025-06-22 20:36:56.590 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:37:35.381 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:37:35.631 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:37:35.631 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:37:35.631 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:39:53.181 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:39:53.462 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:39:53.462 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:39:53.462 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:39:53.463 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:39:54.333 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:39:54.335 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:39:54.336 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:39:54.336 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:39:55.335 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:39:55.336 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:39:56.143 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:39:56.144 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: microsoft/phi-3-mini-128k-instruct:free
+2025-06-22 20:39:57.058 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:39:57.059 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: google/gemma-7b-it:free
+2025-06-22 20:39:57.836 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:40:09.257 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:40:09.526 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:40:09.526 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:40:09.527 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:40:10.048 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:40:10.049 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:40:10.049 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 20:40:10.055 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 20:40:10.056 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.001秒)
+2025-06-22 20:40:10.056 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 20:40:10.056 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 20:40:10.056 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.007秒)
+2025-06-22 20:40:10.058 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 20:40:10.059 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:40:10.060 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: groq
+2025-06-22 20:40:10.060 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:40:10.061 | INFO     | strategy:__init__:98 | AI策略引擎初始化完成 - 使用Groq AI
+2025-06-22 20:40:10.062 | INFO     | strategy:generate_rules_from_llm:210 | 开始使用Groq AI生成整理规则
+2025-06-22 20:40:10.062 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:40:10.062 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:40:10.942 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 401 - {"error":{"message":"No auth credentials found","code":401}}
+2025-06-22 20:40:10.943 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_001
+2025-06-22 20:40:10.944 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_002
+2025-06-22 20:40:10.944 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_003
+2025-06-22 20:40:10.945 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_004
+2025-06-22 20:40:10.945 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_005
+2025-06-22 20:40:10.946 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_006
+2025-06-22 20:40:10.946 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_007
+2025-06-22 20:40:10.946 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_008
+2025-06-22 20:40:10.946 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_009
+2025-06-22 20:40:10.946 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_010
+2025-06-22 20:40:10.946 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_011
+2025-06-22 20:40:10.947 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_012
+2025-06-22 20:40:10.947 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_013
+2025-06-22 20:40:10.947 | INFO     | strategy:_validate_and_optimize_rules:400 | 规则验证完成: 0/0 有效
+2025-06-22 20:40:10.948 | INFO     | strategy:generate_rules_from_llm:226 | Groq AI规则生成成功: 0 条规则
+2025-06-22 20:40:10.950 | INFO     | strategy:save_rules_to_file:451 | 规则集已保存: D:\python项目\Aether_Desktop\data\demo_rules.json
+2025-06-22 20:40:10.951 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:41:41.799 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:41:41.800 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:41:41.801 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:41:41.801 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:41:52.335 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:41:52.659 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:41:52.659 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:41:52.660 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:42:08.317 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:42:08.585 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:42:08.585 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:42:08.586 | INFO     | utils.ai_providers:_setup_providers:281 | 使用指定的AI提供商: groq
+2025-06-22 20:43:10.266 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:43:10.267 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:43:10.268 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:43:10.268 | INFO     | utils.ai_providers:_setup_providers:281 | 使用指定的AI提供商: groq
+2025-06-22 20:44:26.117 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:44:26.118 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:44:26.118 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:44:26.118 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:44:39.230 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:44:39.510 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:44:39.510 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:44:39.511 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:44:39.512 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:44:46.590 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:44:46.594 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:44:46.594 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:44:46.595 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:44:51.704 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:44:51.706 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:44:53.720 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:44:53.721 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: microsoft/phi-3-mini-128k-instruct:free
+2025-06-22 20:44:54.755 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 404 - {"error":{"message":"No endpoints found for microsoft/phi-3-mini-128k-instruct:free.","code":404},"user_id":"user_2vGcvfA4LUcvPZ94mwFlbhItOMS"}
+2025-06-22 20:44:54.755 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: google/gemma-7b-it:free
+2025-06-22 20:44:55.902 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 404 - {"error":{"message":"No endpoints found for google/gemma-7b-it:free.","code":404},"user_id":"user_2vGcvfA4LUcvPZ94mwFlbhItOMS"}
+2025-06-22 20:45:21.694 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:45:21.979 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:45:21.980 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:45:21.980 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:45:22.521 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:45:22.521 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:45:22.522 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 20:45:22.528 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 20:45:22.528 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 20:45:22.528 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 20:45:22.529 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 20:45:22.529 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.007秒)
+2025-06-22 20:45:22.531 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 20:45:22.532 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:45:22.533 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: groq
+2025-06-22 20:45:22.533 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:45:22.533 | INFO     | strategy:__init__:98 | AI策略引擎初始化完成 - 使用Groq AI
+2025-06-22 20:45:22.534 | INFO     | strategy:generate_rules_from_llm:210 | 开始使用Groq AI生成整理规则
+2025-06-22 20:45:22.534 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:45:22.534 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:45:31.078 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:45:31.078 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_001
+2025-06-22 20:45:31.079 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_002
+2025-06-22 20:45:31.079 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_003
+2025-06-22 20:45:31.079 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_004
+2025-06-22 20:45:31.079 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_005
+2025-06-22 20:45:31.080 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_006
+2025-06-22 20:45:31.080 | INFO     | strategy:_validate_and_optimize_rules:400 | 规则验证完成: 0/0 有效
+2025-06-22 20:45:31.080 | INFO     | strategy:generate_rules_from_llm:226 | Groq AI规则生成成功: 0 条规则
+2025-06-22 20:45:31.081 | INFO     | strategy:save_rules_to_file:451 | 规则集已保存: D:\python项目\Aether_Desktop\data\demo_rules.json
+2025-06-22 20:45:31.083 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:46:04.402 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:46:04.691 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:46:04.691 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:46:04.692 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:46:04.692 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:46:04.693 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (meta-llama/llama-3.1-8b-instruct:free) 生成规则
+2025-06-22 20:46:04.693 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:46:15.091 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:46:32.083 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:46:32.342 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:46:32.343 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:46:32.343 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:46:32.863 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:46:32.863 | INFO     | __main__:__init__:77 | === Aether Desktop 启动 ===
+2025-06-22 20:46:32.864 | INFO     | __main__:__init__:78 | 版本: 1.0.0
+2025-06-22 20:46:32.864 | INFO     | __main__:__init__:79 | Python: 3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]
+2025-06-22 20:46:32.864 | INFO     | __main__:run:226 | Aether Desktop 正在启动...
+2025-06-22 20:46:32.864 | INFO     | __main__:initialize_modules:109 | 正在初始化核心模块...
+2025-06-22 20:46:32.866 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:46:32.866 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:46:32.867 | INFO     | strategy:__init__:98 | AI策略引擎初始化完成 - 使用Groq AI
+2025-06-22 20:46:32.867 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:46:32.867 | INFO     | __main__:initialize_modules:133 | 所有模块初始化完成
+2025-06-22 20:46:32.869 | INFO     | execution:_process_operations:536 | 操作处理线程已启动
+2025-06-22 20:46:32.869 | INFO     | execution:start_monitoring:492 | 桌面监控已启动: C:\Users\17745\\Desktop
+2025-06-22 20:46:32.869 | INFO     | utils.logger:wrapper:140 | 执行完成: start_monitoring (耗时: 0.002秒)
+2025-06-22 20:46:32.869 | INFO     | __main__:_start_monitoring:315 | 桌面监控已启动
+2025-06-22 20:46:32.869 | INFO     | __main__:run:243 | Aether Desktop 启动完成，运行在系统托盘
+2025-06-22 20:47:51.736 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:47:51.737 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: deepseek-ai/deepseek-v3:free
+2025-06-22 20:47:51.737 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:47:51.737 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:48:59.964 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:48:59.965 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: deepseek-ai/deepseek-v3:free
+2025-06-22 20:48:59.965 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:48:59.966 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:51:11.855 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:51:11.856 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: deepseek/deepseek-r1:free
+2025-06-22 20:51:11.856 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:51:11.857 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:51:26.910 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:51:27.176 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: deepseek/deepseek-r1:free
+2025-06-22 20:51:27.176 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:51:27.177 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:51:27.177 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:51:27.178 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (deepseek/deepseek-r1:free) 生成规则
+2025-06-22 20:51:27.179 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: deepseek/deepseek-r1:free
+2025-06-22 20:51:52.947 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:52:06.591 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:52:06.878 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: deepseek/deepseek-r1:free
+2025-06-22 20:52:06.878 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:52:06.878 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:52:07.482 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 20:52:07.483 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 20:52:07.483 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 20:52:07.489 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 20:52:07.489 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 20:52:07.490 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 20:52:07.490 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 20:52:07.490 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.007秒)
+2025-06-22 20:52:07.492 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 20:52:07.493 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:52:07.493 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: groq
+2025-06-22 20:52:07.494 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:52:07.494 | INFO     | strategy:__init__:98 | AI策略引擎初始化完成 - 使用Groq AI
+2025-06-22 20:52:07.494 | INFO     | strategy:generate_rules_from_llm:210 | 开始使用Groq AI生成整理规则
+2025-06-22 20:52:07.495 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (deepseek/deepseek-r1:free) 生成规则
+2025-06-22 20:52:07.495 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: deepseek/deepseek-r1:free
+2025-06-22 20:52:35.531 | WARNING  | utils.ai_providers:generate_rules:200 | JSON解析失败: Expecting value: line 1 column 1 (char 0), 使用降级规则
+2025-06-22 20:52:35.531 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_001
+2025-06-22 20:52:35.532 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_002
+2025-06-22 20:52:35.532 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_003
+2025-06-22 20:52:35.532 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_004
+2025-06-22 20:52:35.533 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_005
+2025-06-22 20:52:35.533 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_006
+2025-06-22 20:52:35.534 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_007
+2025-06-22 20:52:35.534 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_008
+2025-06-22 20:52:35.534 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_009
+2025-06-22 20:52:35.534 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_010
+2025-06-22 20:52:35.534 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_011
+2025-06-22 20:52:35.535 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_012
+2025-06-22 20:52:35.535 | WARNING  | strategy:_validate_and_optimize_rules:380 | 跳过无效规则: groq_rule_013
+2025-06-22 20:52:35.535 | INFO     | strategy:_validate_and_optimize_rules:400 | 规则验证完成: 0/0 有效
+2025-06-22 20:52:35.535 | INFO     | strategy:generate_rules_from_llm:226 | Groq AI规则生成成功: 0 条规则
+2025-06-22 20:52:35.537 | INFO     | strategy:save_rules_to_file:451 | 规则集已保存: D:\python项目\Aether_Desktop\data\demo_rules.json
+2025-06-22 20:52:35.538 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 20:53:23.211 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 20:53:23.489 | INFO     | utils.ai_providers:_setup_providers:265 | 注册OpenRouter提供商: deepseek/deepseek-r1:free
+2025-06-22 20:53:23.489 | INFO     | utils.ai_providers:_setup_providers:272 | 注册Groq提供商: llama3-8b-8192
+2025-06-22 20:53:23.489 | INFO     | utils.ai_providers:_setup_providers:287 | 自动选择AI提供商: openrouter
+2025-06-22 20:53:23.490 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: deepseek/deepseek-r1:free
+2025-06-22 20:53:40.014 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:53:40.015 | INFO     | utils.ai_providers:switch_provider:305 | 切换到AI提供商: openrouter
+2025-06-22 20:53:40.016 | INFO     | utils.ai_providers:generate_rules:339 | 使用 OpenRouter (deepseek/deepseek-r1:free) 生成规则
+2025-06-22 20:53:40.016 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: deepseek/deepseek-r1:free
+2025-06-22 20:54:15.389 | WARNING  | utils.ai_providers:generate_rules:200 | JSON解析失败: Unterminated string starting at: line 96 column 20 (char 2140), 使用降级规则
+2025-06-22 20:54:15.391 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: meta-llama/llama-3.1-8b-instruct:free
+2025-06-22 20:54:17.698 | INFO     | utils.ai_providers:generate_rules:197 | OpenRouter API调用成功，规则生成完毕
+2025-06-22 20:54:17.699 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: microsoft/phi-3-mini-128k-instruct:free
+2025-06-22 20:54:18.805 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 404 - {"error":{"message":"No endpoints found for microsoft/phi-3-mini-128k-instruct:free.","code":404},"user_id":"user_2vGcvfA4LUcvPZ94mwFlbhItOMS"}
+2025-06-22 20:54:18.806 | INFO     | utils.ai_providers:generate_rules:145 | 正在调用OpenRouter API生成规则... 模型: google/gemma-7b-it:free
+2025-06-22 20:54:19.973 | ERROR    | utils.ai_providers:generate_rules:203 | OpenRouter API错误: 404 - {"error":{"message":"No endpoints found for google/gemma-7b-it:free.","code":404},"user_id":"user_2vGcvfA4LUcvPZ94mwFlbhItOMS"}

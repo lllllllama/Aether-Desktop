@@ -80,29 +80,50 @@ def demo_ai_strategy(snapshot):
     print("-" * 40)
     
     try:
-        # 检查API密钥
-        config = get_config()
-        api_key = config.ai_config['gemini_api_key']
+        # 检查可用的AI提供商
+        from utils.ai_providers import ai_manager
         
-        if not api_key or api_key == 'YOUR_GEMINI_API_KEY_HERE':
-            print("⚠️  Gemini API密钥未配置")
-            print("请在 config.ini 中配置有效的API密钥以启用AI功能")
+        available_providers = ai_manager.get_available_providers()
+        provider_info = ai_manager.get_current_provider_info()
+        
+        print(f"📋 可用的AI提供商: {available_providers}")
+        print(f"🤖 当前提供商: {provider_info['name']} ({provider_info['model']})")
+        
+        if not available_providers:
+            print("⚠️  没有可用的AI提供商")
+            print("请在 config.ini 中配置以下API密钥之一:")
+            print("  - OpenRouter API Key (推荐，支持多种免费模型)")
+            print("  - Groq API Key (高速免费)")
             print("演示跳过AI规则生成...")
             return None
+        
+        # 如果有多个提供商，可以演示切换
+        if len(available_providers) > 1:
+            print("\n🔄 演示AI提供商切换:")
+            for provider_name in available_providers:
+                print(f"  - 切换到 {provider_name}")
+                ai_manager.switch_provider(provider_name)
+                current_info = ai_manager.get_current_provider_info()
+                print(f"    ✓ 当前: {current_info['name']} ({current_info['model']})")
+            
+            # 切换回优先级最高的提供商
+            ai_manager.switch_provider(available_providers[0])
+            print(f"  → 使用 {available_providers[0]} 进行演示")
         
         # 初始化策略引擎
         strategy_engine = get_strategy_engine()
         print("✓ AI策略引擎初始化成功")
         
         # 生成智能规则
-        print("正在调用AI大脑生成整理规则...")
+        current_provider = ai_manager.get_current_provider_info()
+        print(f"正在调用 {current_provider['name']} API 生成整理规则...")
         print("(这可能需要几秒钟时间)")
         
         user_corrections = {}  # 暂时使用空的用户修正记录
         ruleset = strategy_engine.generate_rules_from_llm(snapshot, user_corrections)
         
         if ruleset:
-            print("✓ AI规则生成成功")
+            print("✅ AI规则生成成功")
             print(f"  - 规则版本: {ruleset.version}")
             print(f"  - 生成时间: {ruleset.generated_at}")
             print(f"  - 规则数量: {len(ruleset.rules)}")
@@ -214,16 +235,19 @@ def main():
         
         demo_execution()
         demo_file_monitoring()
-        show_project_info()
-        
+        show_project_info()        
         print("\n" + "=" * 60)
         print("🎉 演示完成！")
         print("=" * 60)
+        
         print("\n🚀 下一步操作:")
-        print("1. 配置 Gemini API 密钥 (config.ini)")
+        print("1. 配置AI API密钥 (config.ini):")
+        print("   - OpenRouter API Key (推荐) - 支持多种免费模型")
+        print("   - Groq API Key - 高速免费模型")
         print("2. 运行 python main.py 启动完整应用")
-        print("3. 检查系统托盘中的应用图标")
-        print("4. 使用右键菜单进行桌面整理")
+        print("3. 运行 python test_openrouter.py 测试OpenRouter API")
+        print("4. 检查系统托盘中的应用图标")
+        print("5. 使用右键菜单进行桌面整理")
         
     except KeyboardInterrupt:
         print("\n\n⏹️  演示被用户中断")

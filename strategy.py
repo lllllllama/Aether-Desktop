@@ -33,13 +33,13 @@ try:
     import google.generativeai as genai
     from google.generativeai.types import HarmCategory, HarmBlockThreshold
 except ImportError:
-    print("错误: 需要安装 google-generativeai 库")
-    print("请运行: pip install google-generativeai")
-    exit(1)
+    print("提示: google-generativeai 库未安装，将使用Groq作为AI提供商")
+    genai = None
 
 from pydantic import BaseModel, Field, validator
 from utils.logger import get_logger, log_performance, log_exception
 from utils.config_manager import get_config
+from utils.ai_providers import ai_manager
 from perception import DesktopSnapshot
 
 
@@ -82,20 +82,20 @@ class AIStrategyEngine:
         
         # 获取AI配置
         ai_config = self.config.ai_config
-        self.api_key = ai_config['gemini_api_key']
-        self.model_name = ai_config['gemini_model']
-        self.max_tokens = ai_config['max_tokens']
-        self.temperature = ai_config['temperature']
-        self.use_function_calling = ai_config['use_function_calling']
-        self.max_retries = ai_config['max_retry_attempts']
+        self.api_key = ai_config.get('gemini_api_key', '')
+        self.model_name = ai_config.get('gemini_model', 'gemini-1.5-pro')
+        self.max_tokens = ai_config.get('max_tokens', 8192)
+        self.temperature = ai_config.get('temperature', 0.7)
+        self.use_function_calling = ai_config.get('use_function_calling', True)
+        self.max_retries = ai_config.get('max_retry_attempts', 3)
         
-        # 初始化Gemini
-        self._initialize_gemini()
+        # 优先使用Groq，Gemini作为备用
+        self.ai_manager = ai_manager
         
         # 加载提示词模板
         self.prompt_template = self._load_prompt_template()
         
-        self.logger.info("AI策略引擎初始化完成")
+        self.logger.info("AI策略引擎初始化完成 - 使用Groq AI")
     
     def _initialize_gemini(self) -> None:
         """初始化Gemini API"""
@@ -196,9 +196,8 @@ class AIStrategyEngine:
 请开始分析并生成规则：
 """
     
-    @log_performance
     def generate_rules_from_llm(self, snapshot: DesktopSnapshot, corrections: Dict[str, Any]) -> Optional[DesktopRuleset]:
-        """从LLM生成整理规则
+        """从LLM生成整理规则 - 使用Groq AI
         
         Args:
             snapshot: 桌面状态快照
@@ -208,36 +207,27 @@ class AIStrategyEngine:
             生成的规则集或None
         """
         try:
-            self.logger.info("开始生成AI整理规则")
+            self.logger.info("开始使用Groq AI生成整理规则")
             
             # 构建完整的提示词
-            prompt = self._build_prompt(snapshot, corrections)
+            prompt = self._build_groq_prompt(snapshot, corrections)
             
-            # 检查Token限制
-            if self._estimate_tokens(prompt) > self.max_tokens * 0.8:
-                self.logger.warning("提示词过长，使用摘要模式")
-                prompt = self._build_summarized_prompt(snapshot, corrections)
+            # 调用Groq AI生成规则
+            rules_dict = ai_manager.generate_rules(prompt)
             
-            # 调用LLM生成规则
-            ruleset = None
-            for attempt in range(self.max_retries):
-                try:
-                    ruleset = self._call_llm_with_retry(prompt, attempt + 1)
-                    if ruleset:
-                        break
-                except Exception as e:
-                    self.logger.warning(f"LLM调用失败 (尝试 {attempt + 1}/{self.max_retries}): {e}")
-                    time.sleep(2 ** attempt)  # 指数退避
+            if rules_dict:
+                # 转换为Pydantic模型
+                ruleset = self._convert_to_pydantic_ruleset(rules_dict)
+                
+                if ruleset:
+                    # 验证和优化规则
+                    validated_ruleset = self._validate_and_optimize_rules(ruleset)
+                    
+                    self.logger.info(f"Groq AI规则生成成功: {len(validated_ruleset.rules)} 条规则")
+                    return validated_ruleset
             
-            if not ruleset:
-                self.logger.error("所有重试尝试均失败")
-                return None
-            
-            # 验证和优化规则
-            validated_ruleset = self._validate_and_optimize_rules(ruleset)
-            
-            self.logger.info(f"规则生成成功: {len(validated_ruleset.rules)} 条规则")
-            return validated_ruleset
+            self.logger.error("Groq AI规则生成失败")
+            return None
             
         except Exception as e:
             self.logger.error(f"生成AI规则失败: {e}")
@@ -478,7 +468,136 @@ class AIStrategyEngine:
         except Exception as e:
             self.logger.error(f"加载规则集失败: {e}")
             return None
+        
+    def _build_groq_prompt(self, snapshot: DesktopSnapshot, corrections: Dict[str, Any]) -> str:
+        """构建Groq AI提示词"""
+        try:
+            # 准备桌面快照数据
+            files = snapshot.files[:20]  # 限制文件数量
+            file_types = {}
+            for file_info in files:
+                ext = getattr(file_info, 'extension', 'unknown')
+                file_types[ext] = file_types.get(ext, 0) + 1
+            
+            # 构建提示词
+            prompt = f"""
+根据以下桌面文件信息生成智能整理规则：
 
+## 当前桌面状态
+- 总文件数: {snapshot.total_files}
+- 文件类型分布: {file_types}
+- 桌面分辨率: 1920x1080
+
+## 文件详情
+{self._format_files_for_groq(files)}
+
+## 用户修正历史
+{corrections}
+
+## 要求
+请生成JSON格式的整理规则，包含以下结构：
+{{
+    "regions": {{
+        "documents": {{"x_range": [0, 300], "y_range": [0, 200]}},
+        "images": {{"x_range": [300, 600], "y_range": [0, 200]}},
+        "media": {{"x_range": [600, 900], "y_range": [0, 200]}},
+        "archives": {{"x_range": [0, 300], "y_range": [200, 400]}},
+        "executables": {{"x_range": [300, 600], "y_range": [200, 400]}},
+        "others": {{"x_range": [600, 900], "y_range": [200, 400]}}
+    }},
+    "rules": [
+        {{"pattern": "*.pdf", "target_region": "documents"}},
+        {{"pattern": "*.jpg", "target_region": "images"}},
+        {{"pattern": "*.mp4", "target_region": "media"}},
+        {{"pattern": "*.zip", "target_region": "archives"}},
+        {{"pattern": "*.exe", "target_region": "executables"}},
+        {{"pattern": "*", "target_region": "others"}}
+    ],
+    "metadata": {{
+        "generated_by": "groq_ai",
+        "generation_time": "{datetime.now().isoformat()}",
+        "confidence": 0.9
+    }}
+}}
+
+请确保：
+1. 区域不重叠且覆盖整个桌面
+2. 规则按照文件类型合理分类
+3. 考虑用户的使用习惯
+
+只返回JSON格式的规则，不要包含其他解释文字。
+"""
+            return prompt
+            
+        except Exception as e:
+            self.logger.error(f"构建Groq提示词失败: {e}")
+            return self._get_default_prompt()
+    
+    def _format_files_for_groq(self, files: List) -> str:
+        """格式化文件信息供Groq使用"""
+        try:
+            formatted_files = []
+            for file_info in files[:10]:  # 只显示前10个文件
+                filename = getattr(file_info, 'filename', 'unknown')
+                extension = getattr(file_info, 'extension', 'unknown')
+                size_mb = getattr(file_info, 'size', 0) / (1024 * 1024)
+                formatted_files.append(f"- {filename} ({extension}, {size_mb:.1f}MB)")
+            
+            return "\n".join(formatted_files)
+        except Exception:
+            return "- 文件信息获取失败"
+    
+    def _convert_to_pydantic_ruleset(self, rules_dict: Dict) -> Optional[DesktopRuleset]:
+        """将字典转换为Pydantic规则集"""
+        try:
+            # 构建IconPlacementRule列表
+            placement_rules = []
+            rules = rules_dict.get("rules", [])
+            
+            for i, rule in enumerate(rules):
+                placement_rule = IconPlacementRule(
+                    rule_id=f"groq_rule_{i+1:03d}",
+                    name=f"规则_{i+1}",
+                    description=f"文件模式 {rule.get('pattern', '*')} 移动到 {rule.get('target_region', 'others')}",
+                    conditions={"pattern": rule.get("pattern", "*")},
+                    target_region=rule.get("target_region", "others"),
+                    priority=max(1, 100 - i * 10),  # 优先级递减
+                    enabled=True
+                )
+                placement_rules.append(placement_rule)
+            
+            # 创建DesktopRuleset
+            ruleset = DesktopRuleset(
+                version="1.0",
+                generated_at=datetime.now().isoformat(),
+                summary=f"Groq AI生成的智能整理规则 - {len(placement_rules)}条规则",
+                rules=placement_rules,
+                confidence_score=rules_dict.get("metadata", {}).get("confidence", 0.8)
+            )
+            
+            return ruleset
+            
+        except Exception as e:
+            self.logger.error(f"转换Pydantic规则集失败: {e}")
+            return None
+    
+    def _get_default_prompt(self) -> str:
+        """获取默认提示词"""
+        return """
+生成桌面文件整理规则：
+
+请生成JSON格式规则：
+{
+    "regions": {
+        "documents": {"x_range": [0, 300], "y_range": [0, 200]},
+        "others": {"x_range": [300, 600], "y_range": [0, 200]}
+    },
+    "rules": [
+        {"pattern": "*.pdf", "target_region": "documents"},
+        {"pattern": "*", "target_region": "others"}
+    ]
+}
+"""
 
 # ==================== 全局实例和便捷函数 ====================
 

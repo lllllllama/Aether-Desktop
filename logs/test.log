@@ -1,0 +1,176 @@
+2025-06-22 19:44:04.845 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:44:04.845 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:44:04.846 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:44:04.846 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:44:04.846 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:44:04.846 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:44:04.846 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:44:04.846 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:44:04.847 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:44:04.847 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:44:04.847 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:44:04.848 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:44:04.848 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:44:04.848 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:47:04.034 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:47:04.035 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:47:04.035 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:47:04.035 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:47:04.035 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:47:04.035 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:47:04.035 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:47:04.036 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:47:04.036 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:47:04.036 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:47:04.037 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:47:04.037 | DEBUG    | perception:__init__:81 | 监控路径: C:\Users\17745\\Desktop
+2025-06-22 19:47:04.037 | DEBUG    | utils.logger:wrapper:136 | 开始执行: create_desktop_snapshot
+2025-06-22 19:47:04.037 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:47:04.043 | DEBUG    | perception:_scan_desktop_files:169 | 扫描到 45 个有效文件
+2025-06-22 19:47:04.043 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:47:04.043 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:47:04.043 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:47:04.043 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:47:04.043 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:47:04.043 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.006秒)
+2025-06-22 19:47:04.046 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\test_snapshot.json
+2025-06-22 19:47:04.046 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:47:04.046 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:47:04.047 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:47:04.047 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.001秒)
+2025-06-22 19:47:04.047 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:47:47.554 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:47:47.554 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:47:47.554 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:47:47.554 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:47:47.555 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:47:47.555 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:47:47.555 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:47:47.555 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:47:47.556 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:47:47.556 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:47:47.556 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:47:47.556 | DEBUG    | perception:__init__:81 | 监控路径: C:\Users\17745\\Desktop
+2025-06-22 19:47:47.556 | DEBUG    | utils.logger:wrapper:136 | 开始执行: create_desktop_snapshot
+2025-06-22 19:47:47.556 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:47:47.562 | DEBUG    | perception:_scan_desktop_files:169 | 扫描到 45 个有效文件
+2025-06-22 19:47:47.562 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:47:47.562 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:47:47.562 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:47:47.562 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:47:47.562 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:47:47.562 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.006秒)
+2025-06-22 19:47:47.565 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\test_snapshot.json
+2025-06-22 19:47:47.565 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:47:47.566 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:47:47.566 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:47:47.566 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:47:47.566 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:48:42.426 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:48:42.427 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:48:42.427 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:48:42.427 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:48:42.427 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:48:42.427 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:48:42.427 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:48:42.428 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:48:42.428 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:48:42.428 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:48:42.428 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:48:42.428 | DEBUG    | perception:__init__:81 | 监控路径: C:\Users\17745\\Desktop
+2025-06-22 19:48:42.428 | DEBUG    | utils.logger:wrapper:136 | 开始执行: create_desktop_snapshot
+2025-06-22 19:48:42.429 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:48:42.434 | DEBUG    | perception:_scan_desktop_files:169 | 扫描到 45 个有效文件
+2025-06-22 19:48:42.434 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:48:42.434 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:48:42.434 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:48:42.434 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:48:42.434 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:48:42.434 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.006秒)
+2025-06-22 19:48:42.437 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\test_snapshot.json
+2025-06-22 19:48:42.437 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:48:42.437 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:48:42.437 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:48:42.437 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:48:42.438 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:51:45.647 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:51:45.648 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:51:45.648 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:51:45.648 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:51:45.648 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:51:45.648 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:51:45.648 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:51:45.649 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:51:45.649 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:51:45.649 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:51:45.649 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:51:45.649 | DEBUG    | perception:__init__:81 | 监控路径: C:\Users\17745\\Desktop
+2025-06-22 19:51:45.649 | DEBUG    | utils.logger:wrapper:136 | 开始执行: create_desktop_snapshot
+2025-06-22 19:51:45.649 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:51:45.654 | DEBUG    | perception:_scan_desktop_files:169 | 扫描到 45 个有效文件
+2025-06-22 19:51:45.654 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:51:45.654 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:51:45.654 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:51:45.654 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:51:45.654 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:51:45.654 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.005秒)
+2025-06-22 19:51:45.657 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\test_snapshot.json
+2025-06-22 19:51:45.658 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:51:45.658 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:51:45.658 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:51:45.658 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:51:45.659 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:55:19.792 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:55:19.792 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:55:19.792 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:55:19.792 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:55:19.792 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:55:19.792 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:55:19.792 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:55:19.793 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:55:19.793 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:55:19.793 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:55:19.793 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:55:19.793 | DEBUG    | perception:__init__:81 | 监控路径: C:\Users\17745\\Desktop
+2025-06-22 19:55:19.793 | DEBUG    | utils.logger:wrapper:136 | 开始执行: create_desktop_snapshot
+2025-06-22 19:55:19.794 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:55:19.799 | DEBUG    | perception:_scan_desktop_files:169 | 扫描到 45 个有效文件
+2025-06-22 19:55:19.799 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:55:19.799 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:55:19.799 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:55:19.799 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:55:19.799 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:55:19.799 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.006秒)
+2025-06-22 19:55:19.802 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\test_snapshot.json
+2025-06-22 19:55:19.803 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:55:19.803 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:55:19.803 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:55:19.803 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:55:19.804 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:56:18.982 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:56:18.982 | DEBUG    | utils.logger:setup_logger:86 | 日志级别: DEBUG
+2025-06-22 19:56:18.982 | DEBUG    | utils.logger:setup_logger:87 | 日志文件: logs/test.log
+2025-06-22 19:56:18.982 | DEBUG    | utils.logger:setup_logger:88 | 控制台输出: False
+2025-06-22 19:56:18.982 | DEBUG    | __main__:test_logging_system:103 | 这是一条调试信息
+2025-06-22 19:56:18.982 | INFO     | __main__:test_logging_system:104 | 这是一条信息
+2025-06-22 19:56:18.983 | WARNING  | __main__:test_logging_system:105 | 这是一条警告
+2025-06-22 19:56:18.983 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:56:18.983 | DEBUG    | utils.icon_manager:__init__:110 | 桌面路径: C:\Users\17745\Desktop
+2025-06-22 19:56:18.984 | DEBUG    | utils.icon_manager:__init__:111 | 屏幕分辨率: NonexNone
+2025-06-22 19:56:18.984 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:56:18.984 | DEBUG    | perception:__init__:81 | 监控路径: C:\Users\17745\\Desktop
+2025-06-22 19:56:18.984 | DEBUG    | utils.logger:wrapper:136 | 开始执行: create_desktop_snapshot
+2025-06-22 19:56:18.984 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:56:18.990 | DEBUG    | perception:_scan_desktop_files:169 | 扫描到 45 个有效文件
+2025-06-22 19:56:18.990 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:56:18.990 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:56:18.990 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.000秒)
+2025-06-22 19:56:18.990 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:56:18.990 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:56:18.990 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.006秒)
+2025-06-22 19:56:18.993 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\test_snapshot.json
+2025-06-22 19:56:18.993 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:56:18.993 | DEBUG    | utils.logger:wrapper:136 | 开始执行: get_all_icon_positions
+2025-06-22 19:56:18.994 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:56:18.994 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.001秒)
+2025-06-22 19:56:18.994 | INFO     | execution:__init__:463 | 执行引擎初始化完成

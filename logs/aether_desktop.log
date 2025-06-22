@@ -1,0 +1,27 @@
+2025-06-22 19:39:30.617 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:40:00.412 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:42:29.449 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:44:04.024 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:47:03.244 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:47:46.787 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:48:41.653 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:48:56.831 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:49:45.751 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:50:25.224 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:50:25.978 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:50:25.979 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:50:25.979 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:50:48.611 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:50:49.562 | INFO     | utils.icon_manager:__init__:109 | 桌面图标管理器初始化完成
+2025-06-22 19:50:49.562 | INFO     | perception:__init__:80 | 桌面感知系统初始化完成
+2025-06-22 19:50:49.563 | INFO     | perception:create_desktop_snapshot:91 | 开始创建桌面状态快照
+2025-06-22 19:50:49.568 | WARNING  | utils.icon_manager:get_all_icon_positions:169 | ListView句柄无效，无法获取图标位置
+2025-06-22 19:50:49.569 | INFO     | utils.logger:wrapper:140 | 执行完成: get_all_icon_positions (耗时: 0.001秒)
+2025-06-22 19:50:49.569 | ERROR    | utils.icon_manager:get_desktop_regions:366 | 获取桌面区域失败: unsupported operand type(s) for //: 'NoneType' and 'int'
+2025-06-22 19:50:49.569 | INFO     | perception:create_desktop_snapshot:130 | 桌面快照创建完成: 45 个文件
+2025-06-22 19:50:49.570 | INFO     | utils.logger:wrapper:140 | 执行完成: create_desktop_snapshot (耗时: 0.007秒)
+2025-06-22 19:50:49.572 | INFO     | perception:save_snapshot_to_file:396 | 桌面快照已保存: C:\Users\17745\data\demo_snapshot.json
+2025-06-22 19:50:49.574 | INFO     | execution:__init__:463 | 执行引擎初始化完成
+2025-06-22 19:51:44.872 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:55:19.022 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成
+2025-06-22 19:56:18.237 | INFO     | utils.logger:setup_logger:85 | 日志系统初始化完成

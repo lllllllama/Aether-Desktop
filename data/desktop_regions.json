@@ -1,0 +1,54 @@
+{
+  "regions": [
+    {
+      "id": "top_left",
+      "name": "左上区域",
+      "description": "适合放置常用工作文件和应用程序",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 300,
+      "grid_size": 32,
+      "margin": 10,
+      "recommended_types": ["shortcut", "executable", "document"]
+    },
+    {
+      "id": "top_right", 
+      "name": "右上区域",
+      "description": "适合放置临时文件和下载内容",
+      "x": 400,
+      "y": 0, 
+      "width": 400,
+      "height": 300,
+      "grid_size": 32,
+      "margin": 10,
+      "recommended_types": ["archive", "installer", "temporary"]
+    },
+    {
+      "id": "bottom_left",
+      "name": "左下区域", 
+      "description": "适合放置媒体文件",
+      "x": 0,
+      "y": 300,
+      "width": 400,
+      "height": 300,
+      "grid_size": 32,
+      "margin": 10,
+      "recommended_types": ["image", "video", "audio"]
+    },
+    {
+      "id": "bottom_right",
+      "name": "右下区域",
+      "description": "适合放置其他类型文件",
+      "x": 400,
+      "y": 300,
+      "width": 400, 
+      "height": 300,
+      "grid_size": 32,
+      "margin": 10,
+      "recommended_types": ["other", "backup"]
+    }
+  ],
+  "version": "1.0",
+  "last_updated": "2024-01-01T00:00:00"
+}
